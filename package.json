@@ -3,11 +3,15 @@
   "theme": "syntax",
   "version": "0.0.1",
   "description": "A light syntax theme easy on the eyes",
+  "repository": "https://github.com/nerdenough/essence-syntax",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/nerdenough/essence-syntax",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nerdenough/essence-syntax.git"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
