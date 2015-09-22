@@ -4,6 +4,12 @@ atom-text-editor, :host {
   background-color: @syntax-background-color;
   color: @blue;
 
+  .text {
+    &.html {
+      color: @syntax-text-color;
+    }
+  }
+
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
   }
@@ -270,6 +276,14 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @pink;
 
     &.id {
+      color: @blue;
+    }
+  }
+
+  // HTML
+  &.html {
+    &.tag {
+      text-decoration: none;
       color: @blue;
     }
   }
