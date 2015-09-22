@@ -77,7 +77,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .keyword {
-  color: @syntax-text-color;
+  color: @blue;
 
   &.control {
     color: @blue;
@@ -98,6 +98,13 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .storage {
   color: @syntax-text-color;
+
+  // JavaScript
+  &.js {
+    &.function {
+      color: @blue;
+    }
+  }
 }
 
 .constant {
@@ -187,6 +194,12 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @pink;
   }
 
+  // JavaScript
+  &.js {
+    &.definition.parameters {
+      color: @blue;
+    }
+  }
 }
 
 .support {
@@ -199,7 +212,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.function  {
-    color: @syntax-text-color;
+    color: @blue;
 
     &.any-method {
       color: @blue;
@@ -254,6 +267,13 @@ atom-text-editor .search-results .marker.current-result .region,
   &.separator {
     background-color: darken(@almost-white, 60%);
     color: @syntax-text-color;
+  }
+
+  // JavaScript
+  &.js {
+    &.delimiter.method {
+      color: @syntax-text-color;
+    }
   }
 }
 
